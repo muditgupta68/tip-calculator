@@ -1,0 +1,39 @@
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.noBorder {
+  border: none;
+  outline: none;
+}
+
+.marginTop {
+  margin-top: 1rem;
+}
+
+.active{
+    background-color: hsl(172, 67%, 45%)!important;
+}
+
+.warningBorder{
+    border: 2px solid rgb(211, 33, 33);
+}

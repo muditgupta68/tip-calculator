@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Bill-Splitter @ Mudit</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container flexCenter">
+      <div class="container application flex">
+        <div class="options">
+          <div class="billInput">
+            <p class="leftPara">Bill</p>
+            <svg
+              class="signs"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              style="
+                fill: hsl(184, 14%, 56%);
+                position: absolute;
+                top: 42px;
+                left: 10px;
+              "
+            >
+              <path
+                d="M15.999 8.5h2c0-2.837-2.755-4.131-5-4.429V2h-2v2.071c-2.245.298-5 1.592-5 4.429 0 2.706 2.666 4.113 5 4.43v4.97c-1.448-.251-3-1.024-3-2.4h-2c0 2.589 2.425 4.119 5 4.436V22h2v-2.07c2.245-.298 5-1.593 5-4.43s-2.755-4.131-5-4.429V6.1c1.33.239 3 .941 3 2.4zm-8 0c0-1.459 1.67-2.161 3-2.4v4.799c-1.371-.253-3-1.002-3-2.399zm8 7c0 1.459-1.67 2.161-3 2.4v-4.8c1.33.239 3 .941 3 2.4z"
+              ></path>
+            </svg>
+            <input placeholder="0" type="text" class="right bill noBorder" />
+          </div>
+
+          <div class="buttonInput">
+            <p class="leftPara">Select Tip %</p>
+            <div class="grid buttonContainer">
+              <button value="5" class="center tipButton">5%</button>
+              <button value="10" class="center tipButton">10%</button>
+              <button value="15" class="center tipButton">15%</button>
+              <button value="25" class="center tipButton">25%</button>
+              <button value="50" class="center tipButton">50%</button>
+              <input
+                class="center customButton noBorder"
+                placeholder="Custom"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div class="peopleInput">
+            <p class="leftPara">Number of People</p>
+            <p class="warning">Can't be zero</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="signs"
+              style="
+                fill: hsl(184, 14%, 56%);
+                position: absolute;
+                top: 42px;
+                left: 10px;
+              "
+            >
+              <path
+                d="M9.5 12c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm1.5 1H8c-3.309 0-6 2.691-6 6v1h15v-1c0-3.309-2.691-6-6-6z"
+              ></path>
+              <path
+                d="M16.604 11.048a5.67 5.67 0 0 0 .751-3.44c-.179-1.784-1.175-3.361-2.803-4.44l-1.105 1.666c1.119.742 1.8 1.799 1.918 2.974a3.693 3.693 0 0 1-1.072 2.986l-1.192 1.192 1.618.475C18.951 13.701 19 17.957 19 18h2c0-1.789-.956-5.285-4.396-6.952z"
+              ></path>
+            </svg>
+            <input class="right people noBorder" placeholder="1" type="text" />
+          </div>
+        </div>
+        <div class="result">
+          <div class="wrapper grid">
+            <div class="dataTip">
+              <p class="rightPara">Tip Amount</p>
+              <span>/ person</span>
+            </div>
+            <h2 id="tipPerPerson">$0.00</h2>
+
+            <div class="dataPerson">
+              <p class="rightPara">Total</p>
+              <span>/ person</span>
+            </div>
+            <h2 id="total">$0.00</h2>
+          </div>
+          <button class="center reset noBorder">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="attribution">
+        Coded by
+        <a href="https://github.com/muditgupta68" target="_blank">MUDIT GUPTA</a
+        >
+      </div>
+    </footer>
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
